@@ -1,0 +1,464 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+}
+
+#wrapper{
+    background: linear-gradient(rgb(5, 116, 82), rgb(2, 90, 86), rgb(3, 128, 69));
+    margin-top: -1em;
+    padding-bottom: 1em;
+    margin-bottom: -1em;
+    margin-left: -1em;
+    
+    
+}
+
+#container{
+    width: 1024px;
+    margin: auto;
+    background-color: white;
+}
+
+
+                                                /* Header */
+
+header{
+    background-color: rgb(5, 116, 82);
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    position: relative;
+}
+
+header div a{
+    text-decoration: none;
+    color: white;
+    vertical-align: middle;
+    padding: 0.6em;
+}
+
+header img{
+    vertical-align: middle;
+}
+
+.logotop{
+    width: 75px;
+    height: 60px;
+}
+
+.floatlogo{
+    left: 6em;
+    top: 1em;
+    position: absolute;
+}
+
+#menu{
+    text-align: right;
+    padding-right: 6em;
+}
+
+#menu a:hover{
+    border-bottom: solid white;
+}
+
+#burger{
+    padding: 0.3em;
+    vertical-align: middle;
+    border: solid white;
+    color: white;
+}
+
+figure{
+    background-image: url("images/banniere.jpg");
+    width: 100%;
+    margin: 0;
+    padding: 5em;
+    text-align: center;
+    color: white;
+}
+
+figure span{
+    border: solid white;
+    padding: 0.7em; 
+}
+
+figure span a{
+    text-decoration: none;
+    color: white;
+}
+
+                                                /* Main */
+
+                                                /* Article 1 */
+
+                                                /* Article 1 - Section 001*/
+#article001 h4{
+    margin: 0;
+}
+
+#article001 p{
+    text-align: justify;
+}
+
+#article001{
+    display: flex;
+    padding: 2em;
+}
+
+#article001>*{                                  /* Tout les enfants de premier niveau de Article001 */
+    flex:1;                                     /* Donne un ratio de 1, se repartisse 1/3 de l'espace chacun */
+}
+                                             
+.section001{
+    padding-right: 2em;
+}
+
+                                                /* Article 1 - Block 002*/
+
+#section002{                        
+    position: relative;                         /* Relative pour que les fa reste contenue dans la catégorie 2*/
+    padding-left: 2em;
+    
+}
+
+.section002 i{                                  /* Place les fa dans la catégorie 2*/
+    left: 1px;
+    position: absolute;
+}
+
+
+                                                /* Article 1 - Accordion */
+.green{
+    color: rgb(7, 189, 134);                  /*Couleur des fa en vert*/
+}
+
+.grey{
+    color: grey;                              /* Couleur des paragraphes du Block 2 en gris*/
+}
+
+.accordion-part{
+    position: relative;                         /* Relative pour que les fa reste contenue dans la 3éme catégorie */
+    margin: 1em 0; 
+}
+.accordion-part h4{
+    margin: 1rem 0;
+    cursor: pointer;                            /* Change le curseur quand on est sur l'élèment*/
+}
+.accordion-part p{
+    text-align: justify;
+    height: 0em; margin: 0em 0;
+    transition: margin 0.5s, height 0.5s;
+    overflow: hidden;
+}
+.accordion-part i{
+    position: absolute;
+    left: -2em;
+}
+.accordion-part i.fas:before{
+    content: "\f067";
+}
+
+.acc-open i.fas:before{
+    content: "\f068";
+}
+
+.acc-open p{
+    height: 3.5em;
+    margin: 1em 0;
+}
+
+                                                /* Article 2 */
+
+
+#article002{            
+    display: flex;
+    flex-wrap: wrap;                            /* Retour a ligne des images */
+}
+
+#article002 div img{                            /* Hack ligne blanche */
+    vertical-align: top;
+}
+
+
+.gal:hover{                                     /* Bordure au survol de l'image */
+    
+    border: 7px inset rgb(7, 189, 134);
+    
+}
+                      
+.gal{                                          /* Toujours définir la taille de l'overflow */        
+    overflow: hidden;
+    width: 25%; 
+    width:256px;            
+    height:144px;
+    
+    
+}
+
+.gal img{
+    transition: transform 1.2s;
+    
+}
+
+.gal img:hover{
+    transform: scale(1.3, 1.3);
+    
+}
+
+
+
+                                                /* Article 3 */
+
+article{
+    position: relative;
+}
+
+.pad{
+    font-weight: bolder;
+    padding-left: 0.5em;
+}
+
+section h1{
+    margin-bottom: 0;
+}
+
+article section figcaption{
+    font-weight: bolder;
+    font-size: small;
+    padding-bottom: 4em;
+}
+
+#article003{
+    text-align: center;
+    padding-bottom: 3em;
+    padding-left: 7em;
+    padding-right: 7em;
+}
+
+#petitmenu{
+    display: flex;
+    text-align: left;
+}
+
+#petitmenu p:hover{
+    color: rgb(7, 189, 134);
+}
+
+#loadmore{
+    color: rgb(7, 189, 134);
+    border: solid ;
+    padding: 0.7em;
+    font-weight: bolder;
+    position: absolute;
+    top: 0.9em;
+    right: 4em;
+}
+
+#become{
+    color: rgb(7, 189, 134);
+    border: solid rgb(7, 189, 134);
+    padding: 0.7em;
+}
+
+#tommy{
+    clip-path:ellipse(50% 50%);
+    width: 65px;
+    height: 65px;
+    float: left;
+    margin-right: 1.5em;
+}
+
+#simons{
+    clip-path:ellipse(50% 50%);
+    width: 65px;
+    height: 65px;
+    float: right;
+    margin-left: 1.5em;
+}
+
+#neil{
+    clip-path:ellipse(50% 50%);
+    width: 65px;
+    height: 65pxx;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.textalignright{
+    text-align: right;
+}
+
+.textalignleft{
+    text-align: left;
+}
+
+
+                                                /* Article 4 */
+
+
+article h1{
+    margin-bottom: 0;
+}
+
+#article004{
+    background-image: url("images/SpaceGif.gif");
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    text-align: center;
+    color: white;
+    padding-left: 5em ;
+    padding-right: 5em;
+}
+
+#buy{
+    text-decoration: none;
+    border: solid rgb(7, 189, 134);
+    padding: 0.7em;
+    color: white;
+}
+
+.backcolor{
+    background-color: white;
+    margin: 0;
+    padding-top: 1em;
+    
+}
+
+                                                /* Aside Form */
+
+#aside{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2.5em;
+}
+
+form h4{
+    margin-bottom: 0;
+    color: grey;
+}
+form div{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+form div input{
+    background-color: grey;
+}
+
+#message{
+    padding-bottom: 3.7em;
+    padding-right: 15em;
+}
+
+#send{
+    color: white;
+    background-color: rgb(7, 189, 134);
+    font-weight: bolder;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: none;
+}
+
+.input{
+    padding-right: 15em;
+    padding-bottom: 1.5em;
+}
+                                                /* Footer */
+
+
+
+.white{
+    color: white;
+}
+
+.special{
+    margin-top: 0;
+}
+
+.center{
+    text-align: center;
+}
+
+.footerparagraphepadding{
+    margin-top: 0;
+}
+
+footer{
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+}
+
+footer hr{
+    margin-left: 0;
+}
+
+
+footer form input{
+    background-color: rgb(179, 177, 177);
+    padding: 0.5em;
+}
+
+footer h3{
+    color: grey;
+    margin-bottom: 0;
+}
+
+footer p{
+    padding-top: 1em;
+    color: grey;
+}
+
+footer section, footer form{
+    width: 300px;
+    padding-right: 2em;
+    padding-left: 4em;
+}
+
+#emailadress{
+    background-color: rgba(179, 177, 177, 0.521);
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+#subscribe{
+    border: solid rgb(7, 189, 134);
+    padding: 0.7em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 8em;
+    right: 37.1em
+    
+}
+
+                                                /* Wrapped Footer */
+
+
+div #footerbis{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-left: 22em;
+    padding-right: 22em;
+}
+
+div #footerbis nav a{
+    padding-left: 1em;
+}
+
+.bottomfloatright{
+    text-decoration: none;
+    color: white;
+}
